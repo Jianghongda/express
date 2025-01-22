@@ -2,9 +2,9 @@ const express = require('express')
 
 const router = express.Router()
 
-router.get('/', (req, res, next) => {
+router.get('/list', (req, res, next) => {
   console.log(req.method);
-  res.send('/index')
+  res.send('/video-list')
 })
 
 router.get('/users', (req, res, next) => {
